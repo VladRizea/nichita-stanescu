@@ -1,0 +1,24 @@
+{
+    "RO": {
+      "home" : "Acasă",
+      "life" : "Viața",
+      "work" : "Opere",
+      "critics" : "Critică",
+      "video" : "Video",
+      "createdby" : "Creat de Rizea Vlad",
+      "findoutmore" : "Află mai mult!",
+      "whowas" : "CINE A FOST",
+      "intro" : "Nichita Stănescu a fost un poet, scriitor și eseist român, considerat de critica literară dar și de publicul larg drept unul dintre cei mai mari scriitori români."
+    },
+    "EN": {
+        "home" : "Home",
+        "life" : "Life",
+        "work" : "Work",
+        "critics" : "Critics",
+        "video" : "Video",
+        "createdby" : "Created by Rizea Vlad",
+        "findoutmore" : "Find out more!",
+        "whowas" : "WHO WAS",
+        "intro" : "Nichita Stănescu was a poet and writer, considered by the critics and the large public as being one of the most important writer from Romania"
+    }
+}

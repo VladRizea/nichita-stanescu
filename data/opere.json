@@ -1,0 +1,190 @@
+{
+    "texts" : [
+        {
+    "name" : "Argotice (1955)",
+    "content" : [
+    "Balada motanului",
+    "Anica",
+    "La poarta",
+    "Bocet",
+    "Nu mai pâlpâie",
+    "Cântec de dor",
+    "Primăvara",
+    "Cântec de lume",
+    "Edict"]
+        },{
+    "name": "Sensul iubirii (1960)",
+    "content":[
+    "Lună în câmp",
+    "O călărire în zori",
+    "Dimineaţă marină",
+    "Avertisment",
+    "Vitraliu"]},{
+  "name" : "O viziune a sentimentelor (1964)", 
+  "content" : [
+    "Ce bine că eşti",
+    "Ploaie în luna lui Marte ",
+    "Viaţa mea se iluminează ",
+    "Emoţie de toamnă ",
+    "Leoaică tânără, iubirea",
+    "Îmbrăţişarea",
+    "Poveste sentimentală",
+    "Vârsta de aur a dragostei",
+    "Sunt un om viu",
+    "Cântec fără răspuns",
+    "Sufletul metalic al oraşului",
+    "Poem" ]},{
+  "name": "Dreptul la timp (1965)", 
+  "content" : [
+    "Dreptul la timp",
+    "Basorelief cu eroi",
+    "Frunzişuri",
+    "Către Galateea",
+    "Inima"]},{
+  "name" : "Obiecte cosmice (1967)", 
+  "content" : [
+    "Somnul cu fierăstraie-n el",
+    "Arbor invers",
+    "Alfa"]},{
+  "name": "Oul şi sfera (1967)", "content" : [
+    "Tinerii",
+    "Orologiu cu statui",
+    "Coagula tristeţea deodată...",
+    "Douăsprezece noaptea, cu dor",
+    "Mă las în continuare",
+    "Scrisoare medievală",
+    "N-am mai murit de foame...",
+    "Îngerul cu o carte în mână"],
+  "Roşu vertical (1967)" : [
+    "Un soldat...",
+    "Şi poate de aceea...",
+    "Închinare"]},{
+  "name": "Necuvintele (1969)", 
+  "content" :[
+    "Poezia",
+    "Râsu' plânsu'",
+    "Zicere",
+    "Somnul şi trezia",
+    "Cotropirea frunzelor",
+    "Pierderea ochiului",
+    "Necuvintele"]},{
+  "name" : "Un pământ numit România (1969)", 
+  "content" : [
+    "Muzica",
+    "Noi",
+    "Grosimea pământului",
+    "Cu bulgări de zăpadă-n mâini",
+    "Morţile iubite",
+    "Acum vom sta...",
+    "Labirint în flăcări",
+    "Plantonul de noapte",
+    "N-au murit în zadar",
+    "Un pământ numit România"]},{
+  "name" : "În dulcele stil clasic (1970)", 
+  "content": [
+    "De dragoste ",
+    "N-ai să vii",
+    "Fel de sfârşit",
+    "Testament",
+    "Estompare",
+    "Ausweis",
+    "Din nou, noi",
+    "Pasăre dormind",
+    "Galben copil, oprit în poză",
+    "Vederea aceasta e relativă ochiului meu",
+    "Mă învelesc de frig...",
+    "Tot universul nostru era albastru şi gol",
+    "Numărătoarea",
+    "Rugare",
+    "Mit",
+    "A mea",
+    "Al meu suflet, Psyhée",
+    "În dulcele stil clasic"]},{
+  "name" : "Belgradul în cinci prieteni (1972)", 
+  "content" : [
+    "A cumpăra un câine",
+    "Străfund de ochi",
+    "Semnal",
+    "În timp",
+    "Poetul şi soldatul",
+    "Tragere la sorţi",
+    "*",
+    "Recele echilibru al stelelor"]},{
+  "name" : "Măreţia frigului (1972)", 
+  "content" : [
+    "Despre starea de zbatere",
+    "Întrebări",
+    "Altă matematică",
+    "Nedreptate",
+    "Colinda pe loc",
+    "Rugăciunea",
+    "Cavaler al florii de cireş",
+    "Cireşar",
+    "Starea de a fi cireşar",
+    "Rău de frumuseţe",
+    "Trecător",
+    "Marină",
+    "Foarte câine6",
+    "Alte chei",
+    "Ai văzut vreodată..."]},{
+  "name" : "Epica magna (1978)", 
+  "content" : [
+    "Pean",
+    "Autoportret",
+    "Haiku",
+    "Dezâmblânzirea",
+    "Hieroglifa",
+    "Înapoierea cheii",
+    "Greşirea cerului",
+    "Operele imperfecte (1979)",
+    "Evocare",
+    "Lecţia despre cub",
+    "Meteoritul lent",
+    "Cheile",
+    "Schimbarea la faţă",
+    "Aterizarea",
+    "Triumful"]},{
+  "name": "Noduri şi semne (1982)", 
+  "content" : [
+    "Tonul",
+    "Semn 1",
+    "Nod 1",
+    "Semn 5",
+    "Semn 6",
+    "Semn 12",
+    "Nod 13",
+    "Nod 19",
+    "Nod 23",
+    "Nod 33"],
+  "Gânduri" : [
+    "Gând 1",
+    "Gând 2",
+    "Gând 3",
+    "Gând 4 ",
+    "Gând 5 ",
+    "Gând 6 ",
+    "Gând 7 ",
+    "Gând 8 ",
+    "Gând 9",
+    "Gând 10 ",
+    "Gând 11 ",
+    "Gând 12",
+    "Gând 13"]}
+  ],
+  "coperte" :[
+      "coperta_1.jpg",
+      "coperta_2.webp",
+      "coperta_3.jpg",
+      "coperta_4.webp",
+      "coperta_5.jpg",
+      "coperta_6.jpg",
+      "coperta_7.jpg",
+      "coperta_8.jpg",
+      "coperta_9.jpg",
+      "coperta_10.jpg",
+      "coperta_11.jpg",
+      "coperta_12.jpg",
+      "coperta_13.jpg"
+
+  ]
+  }

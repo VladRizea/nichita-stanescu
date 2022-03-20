@@ -1,0 +1,199 @@
+.right-side-page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 420px;
+}
+
+.right-side-page-column{
+    margin-left: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-bar{
+    height: 100%;
+    width: 8px;
+    background-color: yellow;
+    position: fixed;
+}
+
+.timeline-image{
+    margin: 10px 40px;
+    width: 300px;
+    height: auto;
+}
+
+
+.timeline-individual{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.timeline-year{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.timeline-year-line{
+    height: 10px;
+    width: 80px;
+    background-color: yellow;
+    
+}
+
+.timeline-year-text{
+    font-size: 40px;
+    margin: 10px;
+}
+
+.timeline-content{
+    width: 50vw;
+    margin: 20px;
+    font-size: 20px;
+}
+
+
+
+.opere-wrapper{
+    border-left: 6px yellow solid;
+    margin: 30px;
+    padding: 10px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.opere-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#critic-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.inside-title{
+    font-size: 90px;
+    margin-left: 50px;
+    margin-bottom: 90px;
+}
+
+.critica-content{
+    font-size: 20px;
+    width: 80%;
+    border-left: 6px yellow solid;
+    padding: 10px;
+}
+
+.huge-quote{
+    color: yellow;
+
+}
+
+.single-critic-item{
+    margin: 20px 40px;
+}
+
+.critica-credit{
+    margin: 20px;
+}
+
+.submit-button-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 800px) {
+    .right-side-page{
+
+        margin-left: 20px;
+    }
+    
+    .timeline-year-text{
+        font-size: 20px;
+        margin: 5px;
+    }
+    
+    .timeline-year-line{
+        height: 10px;
+        width: 40px;
+        background-color: yellow;
+        
+    }
+    .timeline-bar{
+        height: 100%;
+        width: 8px;
+        margin: -5px;
+        background-color: yellow;
+    }
+    
+    .timeline-content{
+        width: 90%;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .timeline-image{
+        margin: 10px 20px;
+        width: 90%;
+        height: auto;
+    }
+    .opere-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .inside-title{
+        font-size: 90px;
+        margin-left: 5px;
+        margin-bottom: 90px;
+    }
+
+    .opere-wrapper{
+        border-left: 6px yellow solid;
+        margin: 10px 0;
+        padding: 10px;
+        align-self: flex-start;
+    }
+
+    .critica-content{
+        font-size: 20px;
+        width: 90%;
+        border-left: 6px yellow solid;
+        padding: 10px;
+    }
+
+    .single-critic-item{
+        margin: 20px 0;
+    }
+
+    .right-side-page-column{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    iframe{
+        width: 90vw;
+        height: 1000px;
+    }
+    .submit-button-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+        }

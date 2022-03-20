@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nichita Stănescu</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/aditional.css">
+    <script src="../components/menu.js"></script>
+    <script src="../components/quiz.js"></script>
+    <link rel="stylesheet" href="../style/quiz.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async function() {
+            
+            var array = [];
+
+            
+            await fetch('../data/quiz.json')
+                .then(response => response.json())
+                .then(data => {array = data})
+                .catch(error => console.log(error));
+                
+            if(window.name === "EN") array = array.EN;
+            else array = array.RO;
+            var image;
+            var htmlElements = "";
+
+            htmlElements += `
+
+            <div class="single-question">
+                      <p class="question">${array.q1}</p>
+        
+                 
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label id="correctString1">1932</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="1">
+                    <label>1933</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>1934</label>
+                    <br>
+                    <input class="answer" type="radio" name="q1" value="0">
+                    <label>1935</label>
+                   
+                  </div>
+              
+              
+                  <div class="single-question">
+                      <p class="question">${array.q2}</p>
+        
+                    
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Argotice</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label id="correctString2">Necuvintele</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="0">
+                    <label>Dreptul la timp</label>
+                    <br>
+                    <input class="answer" type="radio" name="q2" value="1">
+                    <label>O viziune a sentimentelor</label>
+                    
+                  </div>
+              
+            
+            
+              
+                  <div class="single-question">
+                      <p class="question">${array.q3}</p>
+        
+                    
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>Lorena Tudor</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label id="correctString3">Raluca Cristea</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="1">
+                    <label>Magdalena Petrescu</label>
+                    <br>
+                    <input class="answer" type="radio" name="q3" value="0">
+                    <label>Maria Ioana</label>
+                    
+                </div>
+              
+              
+                  <div class="single-question">
+                      <p class="question">${array.q4}</p>
+        
+                    
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>10</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label id="correctString4">30</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="1">
+                    <label>13</label>
+                    <br>
+                    <input class="answer" type="radio" name="q4" value="0">
+                    <label>8</label>
+                    
+                  </div>
+
+                  <br/>
+            <div class="submitter">
+                <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+                type="submit" value="${array.submit}" />
+          </div>
+
+            `;
+            
+            var container = document.getElementById("question-content");
+            container.innerHTML = htmlElements;
+
+            var title = "";
+
+await fetch('../data/interface.json')
+.then(response => response.json())
+.then(data => {title = data})
+.catch(error => console.log(error));
+
+
+if(window.name === "EN") 
+{
+title = title.EN
+}
+else {
+title = title.RO
+}
+
+var containerTitle = document.getElementById("title");
+containerTitle.innerHTML = title.critics;
+
+
+});
+
+    </script>
+
+</head>
+<body >
+    <div class="menu-collapse" onclick="openAndCloseMenu()" id="menu-collapse" >
+        <div class="single-menu-line"></div>
+        <div class="single-menu-line" ></div>
+        <div class="single-menu-line" ></div>
+    </div>    <div class="wrapper">
+                <menu-component class="left-side-menu-container" id="left-menu-container"></menu-component>
+
+        <div class="right-side-page-column">
+            <h2 class="inside-title">Quiz!</h2>
+              
+             <div id="question-content">
+
+             </div> 
+
+      <!--show score upon submit-->
+       
+              <h2 class="quizScore" id="userScore"></h2>
+   
+            <br><br>
+            </div>
+        
+        </div>
+    </div>
+
+
+</body>
+</html>

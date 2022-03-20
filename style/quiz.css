@@ -1,0 +1,108 @@
+/* css here */
+
+  
+  p.question {
+    
+    font-size: 20px;
+    color: black;
+    margin-bottom: 0px;
+  }
+  
+  h2.quizHeader {
+    
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 27px;
+    margin: 24px 0 12px 0;
+    padding: 0 0 4px 0;
+  }
+  
+  h2.quizScore {
+    margin-left: 150px;
+    font-size: 25px;
+  }
+  
+  div.quizAnswers {
+    
+    font-size: 16px;
+    color: black;
+    padding: 4px 0 4px 0;
+  }
+  
+  label {
+    
+    font-size: 14px;
+    color: black;
+    vertical-align: top;
+  }
+  
+  input.answer[type="radio"] {
+    margin-bottom: 10px;
+    color: yellow;
+    background-color: yellow;
+  }
+  
+  input.quizSubmit[type="submit"] {
+    color: black;
+    background-color: yellow;
+    border: 6px yellow solid;
+
+    margin: 0;
+    outline: 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    margin: 40px;
+    font-weight: bold;
+}
+  
+  input.quizSubmit[type="submit"]:hover {
+    background:white ;
+
+    text-decoration: none;
+  }
+  
+
+
+  .submitter {
+    width: 85px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+.single-question{
+    border-left: 6px yellow solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+input:checked{
+  background-color: yellow;
+}
+
+
+@media (max-width: 800px) {
+
+  .single-question{
+    border-left: 6px yellow solid;
+    width: 85vw;
+    padding: 10px;
+    
+}
+
+
+p.question {
+  width: 90vw;
+  font-size: 15 px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+h2.quizScore {
+  margin-left: 0;
+  font-size: 25px;
+  margin: 50px;
+}
+
+}

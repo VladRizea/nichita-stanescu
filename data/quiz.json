@@ -1,0 +1,17 @@
+{
+    "RO": {
+      "q1" : "1. În ce an s-a născut Nichita Stănescu?",
+      "q2" : "2. Cum se numeste volumul publicat in 1964?",
+      "q3" : "3. Cum o chema pe prima sotie a lui Nichita Stănescu?",
+      "q4" : "4. Cate volume a publicat Nichita Stănescu?",
+      "submit" : "Trimite"
+
+    },
+    "EN": {
+        "q1" : "1. In what year was born Nichita Stănescu?",
+        "q2" : "2. What was the name of the volume published in 1964?",
+        "q3" : "3. What was the name of Nichita Stănescu's first wife?",
+        "q4" : "4. How many volumes did Nichita Stănescu publish?",
+        "submit" : "Submit"
+    }
+}

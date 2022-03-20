@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nichita Stănescu</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/aditional.css">
+    <script src="../components/menu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function() {
+            
+            var array = [];
+
+            
+            await fetch('../data/critica.json')
+                .then(response => response.json())
+                .then(data => {array = data})
+                .catch(error => console.log(error));
+                
+            if(window.name === "EN") array = array.EN;
+            else array = array.RO;
+            var image;
+            var htmlElements = "";
+            for (var i = 0; i < array.length; i++) {
+                console.log(array.length);
+            htmlElements += `
+            <div class="single-critic-item">
+            
+            <div class="critica-content">
+                <span class="huge-quote">“</span>	
+                ${array[i].content}
+                <span class="huge-quote">”</span> <br>
+            </div>
+            <div class="critica-credit">${array[i].credit}</div>
+            </div>
+            `;
+            }
+            var container = document.getElementById("critic-items");
+            container.innerHTML = htmlElements;
+
+            var title = "";
+
+await fetch('../data/interface.json')
+.then(response => response.json())
+.then(data => {title = data})
+.catch(error => console.log(error));
+
+
+if(window.name === "EN") 
+{
+title = title.EN
+}
+else {
+title = title.RO
+}
+
+var containerTitle = document.getElementById("title");
+containerTitle.innerHTML = title.critics;
+
+
+});
+
+    </script>
+</head>
+<body >
+    <div class="menu-collapse" onclick="openAndCloseMenu()" id="menu-collapse" >
+        <div class="single-menu-line"></div>
+        <div class="single-menu-line" ></div>
+        <div class="single-menu-line" ></div>
+    </div>    <div class="wrapper">
+                <menu-component class="left-side-menu-container" id="left-menu-container"></menu-component>
+
+        <div class="right-side-page">
+            <div class="inside-critic">
+                <h2 class="inside-title" id="title"></h2>
+                <div id="critic-items">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

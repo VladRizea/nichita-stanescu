@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nichita Stănescu</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/aditional.css">
+    <script src="../components/menu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async function() {
+            
+            var array = [];
+            var title = [];
+            if(window.name === "EN"){
+            await fetch('../data/en.json')
+                .then(response => response.json())
+                .then(data => {array = data.data.timeline})
+                .catch(error => console.log(error));}
+            else {
+                await fetch('../data/ro.json')
+                .then(response => response.json())
+                .then(data => {array = data.data.timeline})
+                .catch(error => console.log(error));} 
+            
+                await fetch('../data/interface.json')
+        .then(response => response.json())
+        .then(data => {title = data})
+        .catch(error => console.log(error));
+    
+
+    if(window.name === "EN") 
+    {
+        title = title.EN
+    }
+    else {
+        title = title.RO
+    }
+
+
+            var image;
+            var htmlElements = "";
+            for (var i = 0; i < array.length; i++) {
+            image = "";
+            if(array[i].image) image = `<img class="timeline-image" src="../images/${array[i].image}" alt="nichita stănescu">`
+            htmlElements += `
+            <div class="timeline-individual">
+                    <div class="timeline-year">
+                        <div class="timeline-year-line"></div>
+                        <h3 class="timeline-year-text">${array[i].year}</h3>
+                    </div>
+                    <p class="timeline-content">${array[i].content}</p>
+                    ${image}
+                </div>
+            `;
+            }
+
+            var container = document.getElementById("timeline-items");
+            container.innerHTML = htmlElements;
+            var containerTitle = document.getElementById("title");
+            containerTitle.innerHTML = title.life;
+        });
+
+    </script>
+
+</head>
+<body >
+    <div class="menu-collapse" onclick="openAndCloseMenu()" id="menu-collapse" >
+        <div class="single-menu-line"></div>
+        <div class="single-menu-line" ></div>
+        <div class="single-menu-line" ></div>
+    </div>    <div class="wrapper">
+                <menu-component class="left-side-menu-container" id="left-menu-container"></menu-component>
+
+        <div class="right-side-page">
+            <div class="timeline-bar"></div>
+            <div class="inside-critic">
+                <h2 class="inside-title" id="title"></h2>
+                <div id="timeline-items">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
